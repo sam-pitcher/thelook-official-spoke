@@ -7,7 +7,7 @@ include: "//thelook-antigravity/explores/thelook_hub.explore.lkml"
 
 # Default datagroup required by central PDTs (user_order_facts)
 datagroup: thelook_default_datagroup {
-  sql_trigger: SELECT MAX(id) FROM `sampitcher-playground.the_look_ca.order_items_table` ;;
+  sql_trigger: SELECT MAX(id) FROM `bigquery-public-data.thelook_ecommerce.order_items` ;;
   max_cache_age: "4 hours"
 }
 
