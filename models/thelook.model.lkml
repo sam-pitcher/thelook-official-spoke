@@ -1,3 +1,4 @@
+label: "Official Spoke: Core Business"
 connection: "default_bigquery_connection"
 
 # 1. Include Governed Views & Explore Templates from the Central Hub
@@ -21,14 +22,17 @@ persist_with: thelook_default_datagroup
 explore: +order_items {
   hidden: no
   label: "Order Items (Core Sales)"
+  group_label: "Official Spoke"
 }
 
 explore: +users {
   hidden: no
   label: "Users (Customer Demographics)"
+  group_label: "Official Spoke"
 }
 
 explore: +orders {
   hidden: no
   label: "Orders (Order-Level Facts)"
+  group_label: "Official Spoke"
 }
